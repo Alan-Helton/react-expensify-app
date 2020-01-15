@@ -14,7 +14,7 @@ export default class ExpenseForm extends React.Component {
             calendarFocused: false,
             error: ''
         }
-    } 
+    }
     onDescriptionChange = (e) => {
         const description = e.target.value
         this.setState(() => ({ description }))
@@ -29,12 +29,11 @@ export default class ExpenseForm extends React.Component {
         if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
             this.setState(() => ({ amount }))
         }
-        
     }
     onDateChange = (createdAt) => {
         if (createdAt) {
-            this.setState(() => ({ createdAt }))        }
-        
+            this.setState(() => ({ createdAt }))
+        }
     }
 
     onFocusChange = ({ focused }) => {
@@ -52,7 +51,6 @@ export default class ExpenseForm extends React.Component {
                 amount: parseFloat(this.state.amount, 10) * 100,
                 createdAt: this.state.createdAt.valueOf(),
                 note: this.state.note
-
             })
         }
     }
@@ -87,7 +85,7 @@ export default class ExpenseForm extends React.Component {
                         placeholder="Add a note for your expense (optional"
                         value={this.state.note}
                         onChange={this.onNoteChange}
-                    >                    
+                    >
                     </textarea>
                     <button>Add Expense</button>
                 </form>
