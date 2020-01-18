@@ -35,7 +35,6 @@ exports[`should render ExpenseForm correctly 1`] = `
     horizontalMargin={0}
     id="date"
     initialVisibleMonth={null}
-    inputIconPosition="before"
     isDayBlocked={[Function]}
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
@@ -50,11 +49,9 @@ exports[`should render ExpenseForm correctly 1`] = `
     onFocusChange={[Function]}
     onNextMonthClick={[Function]}
     onPrevMonthClick={[Function]}
-    openDirection="down"
     orientation="horizontal"
     phrases={
       Object {
-        "calendarLabel": "Calendar",
         "chooseAvailableDate": [Function],
         "clearDate": "Clear Date",
         "closeDatePicker": "Close",
@@ -92,14 +89,13 @@ exports[`should render ExpenseForm correctly 1`] = `
     screenReaderInputMessage=""
     showClearDate={false}
     showDefaultInputIcon={false}
-    weekDayFormat="dd"
     withFullScreenPortal={false}
     withPortal={false}
   />
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional"
+    placeholder="Add a note for your expense (optional)"
     value=""
   />
   <div>
@@ -112,7 +108,7 @@ exports[`should render ExpenseForm correctly 1`] = `
 </form>
 `;
 
-exports[`should render ExpenseForm with expense data 1`] = `
+exports[`should render ExpenseForm correctly with expense data 1`] = `
 <form
   className="form"
   onSubmit={[Function]}
@@ -123,20 +119,20 @@ exports[`should render ExpenseForm with expense data 1`] = `
     onChange={[Function]}
     placeholder="Description"
     type="text"
-    value="Gum"
+    value="Rent"
   />
   <input
     className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
-    value="1.95"
+    value="1095"
   />
   <SingleDatePicker
     anchorDirection="left"
     customCloseIcon={null}
     customInputIcon={null}
-    date={"1970-01-01T00:00:00.000Z"}
+    date={"1969-12-28T00:00:00.000Z"}
     daySize={39}
     disabled={false}
     displayFormat={[Function]}
@@ -147,7 +143,6 @@ exports[`should render ExpenseForm with expense data 1`] = `
     horizontalMargin={0}
     id="date"
     initialVisibleMonth={null}
-    inputIconPosition="before"
     isDayBlocked={[Function]}
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
@@ -162,11 +157,9 @@ exports[`should render ExpenseForm with expense data 1`] = `
     onFocusChange={[Function]}
     onNextMonthClick={[Function]}
     onPrevMonthClick={[Function]}
-    openDirection="down"
     orientation="horizontal"
     phrases={
       Object {
-        "calendarLabel": "Calendar",
         "chooseAvailableDate": [Function],
         "clearDate": "Clear Date",
         "closeDatePicker": "Close",
@@ -204,14 +197,13 @@ exports[`should render ExpenseForm with expense data 1`] = `
     screenReaderInputMessage=""
     showClearDate={false}
     showDefaultInputIcon={false}
-    weekDayFormat="dd"
     withFullScreenPortal={false}
     withPortal={false}
   />
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional"
+    placeholder="Add a note for your expense (optional)"
     value=""
   />
   <div>
@@ -259,7 +251,6 @@ exports[`should render error for invalid form submission 1`] = `
     horizontalMargin={0}
     id="date"
     initialVisibleMonth={null}
-    inputIconPosition="before"
     isDayBlocked={[Function]}
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
@@ -274,11 +265,9 @@ exports[`should render error for invalid form submission 1`] = `
     onFocusChange={[Function]}
     onNextMonthClick={[Function]}
     onPrevMonthClick={[Function]}
-    openDirection="down"
     orientation="horizontal"
     phrases={
       Object {
-        "calendarLabel": "Calendar",
         "chooseAvailableDate": [Function],
         "clearDate": "Clear Date",
         "closeDatePicker": "Close",
@@ -316,14 +305,13 @@ exports[`should render error for invalid form submission 1`] = `
     screenReaderInputMessage=""
     showClearDate={false}
     showDefaultInputIcon={false}
-    weekDayFormat="dd"
     withFullScreenPortal={false}
     withPortal={false}
   />
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional"
+    placeholder="Add a note for your expense (optional)"
     value=""
   />
   <div>
@@ -376,7 +364,6 @@ exports[`should render error for invalid form submission 2`] = `
     horizontalMargin={0}
     id="date"
     initialVisibleMonth={null}
-    inputIconPosition="before"
     isDayBlocked={[Function]}
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
@@ -391,11 +378,9 @@ exports[`should render error for invalid form submission 2`] = `
     onFocusChange={[Function]}
     onNextMonthClick={[Function]}
     onPrevMonthClick={[Function]}
-    openDirection="down"
     orientation="horizontal"
     phrases={
       Object {
-        "calendarLabel": "Calendar",
         "chooseAvailableDate": [Function],
         "clearDate": "Clear Date",
         "closeDatePicker": "Close",
@@ -433,14 +418,13 @@ exports[`should render error for invalid form submission 2`] = `
     screenReaderInputMessage=""
     showClearDate={false}
     showDefaultInputIcon={false}
-    weekDayFormat="dd"
     withFullScreenPortal={false}
     withPortal={false}
   />
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional"
+    placeholder="Add a note for your expense (optional)"
     value=""
   />
   <div>

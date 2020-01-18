@@ -1,22 +1,19 @@
-const path = require('path')
-const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 if (process.env.NODE_ENV === 'test') {
-  require('dotenv').config({ path: '.env.test' })
+  require('dotenv').config({ path: '.env.test' });
 } else if (process.env.NODE_ENV === 'development') {
-  require('dotenv').config({ path: '.env.development' })
+  require('dotenv').config({ path: '.env.development' });
 }
 
-// process.env.NODE_ENV
-
 module.exports = (env) => {
-  const isProduction = env === 'production'
-  const CSSExtract = new ExtractTextPlugin('styles.css')
+  const isProduction = env === 'production';
+  const CSSExtract = new ExtractTextPlugin('styles.css');
 
-  console.log('env', env)
   return {
     entry: ['babel-polyfill', './src/app.js'],
     output: {
@@ -31,18 +28,19 @@ module.exports = (env) => {
       }, {
         test: /\.s?css$/,
         use: CSSExtract.extract({
-          use: [{
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true
+              }
             }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
-          }
           ]
         })
       }]
@@ -55,8 +53,7 @@ module.exports = (env) => {
         'process.env.FIREBASE_DATABASE_URL': JSON.stringify(process.env.FIREBASE_DATABASE_URL),
         'process.env.FIREBASE_PROJECT_ID': JSON.stringify(process.env.FIREBASE_PROJECT_ID),
         'process.env.FIREBASE_STORAGE_BUCKET': JSON.stringify(process.env.FIREBASE_STORAGE_BUCKET),
-        'process.env.FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID),
-        'process.env.FIREBASE_APP_ID': JSON.stringify(process.env.FIREBASE_APP_ID),
+        'process.env.FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID)
       })
     ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
@@ -65,5 +62,5 @@ module.exports = (env) => {
       historyApiFallback: true,
       publicPath: '/dist/'
     }
-  }
-}
+  };
+};

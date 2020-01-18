@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseListItem with fixture data 1`] = `
+exports[`should render ExpenseListItem correctly 1`] = `
 <Link
   className="list-item"
   replace={false}
@@ -15,7 +15,7 @@ exports[`should render ExpenseListItem with fixture data 1`] = `
     <span
       className="list-item__sub-title"
     >
-      December 31, 1969
+      December 31st, 1969
     </span>
   </div>
   <h3
